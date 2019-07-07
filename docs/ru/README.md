@@ -23,12 +23,11 @@
 
 ## <a name="issue"></a> Нашли ошибку?
 
-Пожалуйста, сообщайте о любых проблемах или ошибках в документации, вы можете помочь нам
-[submitting an issue](https://gitlab.com/ZwerOxotnik/teams/issues) на нашем GitLab репозитории или сообщите на [mods.factorio.com](https://mods.factorio.com/mod/teams-zo/discussion).
+Пожалуйста, сообщайте о любых проблемах или ошибках в документации, вы можете помочь нам submitting an issue на нашем GitHub репозитории или сообщите на [mods.factorio.com](https://mods.factorio.com/mod/teams-zo/discussion).
 
 ## <a name="feature"></a> Хотите новую функцию?
 
-Вы можете *запросить* новую функцию [submitting an issue](https://gitlab.com/ZwerOxotnik/teams/issues) на нашем GitLab репозитории или сообщите на [mods.factorio.com](https://mods.factorio.com/mod/teams-zo/discussion).
+Вы можете *запросить* новую функцию submitting an issue на нашем GitHub репозитории или сообщите на [mods.factorio.com](https://mods.factorio.com/mod/teams-zo/discussion).
 
 ## <a name="installing"></a> Установка
 
