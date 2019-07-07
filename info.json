@@ -1,0 +1,12 @@
+{
+    "name": "teams",
+    "version": "1.0.0",
+    "factorio_version": "0.17",
+    "title": "Nickname changer",
+    "author": "ZwerOxotnik",
+    "contact": "zweroxotnik@gmail.com, Discord:ZwerOxotnik#7117",
+    "source": "https://github.com/ZwerOxotnik/teams",
+    "homepage": "https://forums.factorio.com/viewtopic.php?f=190&t=73013",
+    "description": "Adds \"/create_team\" command for creating new team in which you will be.",
+    "dependencies": []
+}
