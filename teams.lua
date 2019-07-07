@@ -16,7 +16,7 @@ limitations under the License.
 
 -- You can write and receive any information on the links below.
 -- Source: https://github.com/ZwerOxotnik/teams
--- Mod portal: https://mods.factorio.com/mod/teams
+-- Mod portal: https://mods.factorio.com/mod/teams-zo
 -- Homepage: https://forums.factorio.com/viewtopic.php?f=190&t=73013
 
 local prohibited_forces = {neutral = true, player = true, enemy = true}

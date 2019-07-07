@@ -24,11 +24,11 @@
 ## <a name="issue"></a> Нашли ошибку?
 
 Пожалуйста, сообщайте о любых проблемах или ошибках в документации, вы можете помочь нам
-[submitting an issue](https://gitlab.com/ZwerOxotnik/teams/issues) на нашем GitLab репозитории или сообщите на [mods.factorio.com](https://mods.factorio.com/mod/teams/discussion).
+[submitting an issue](https://gitlab.com/ZwerOxotnik/teams/issues) на нашем GitLab репозитории или сообщите на [mods.factorio.com](https://mods.factorio.com/mod/teams-zo/discussion).
 
 ## <a name="feature"></a> Хотите новую функцию?
 
-Вы можете *запросить* новую функцию [submitting an issue](https://gitlab.com/ZwerOxotnik/teams/issues) на нашем GitLab репозитории или сообщите на [mods.factorio.com](https://mods.factorio.com/mod/teams/discussion).
+Вы можете *запросить* новую функцию [submitting an issue](https://gitlab.com/ZwerOxotnik/teams/issues) на нашем GitLab репозитории или сообщите на [mods.factorio.com](https://mods.factorio.com/mod/teams-zo/discussion).
 
 ## <a name="installing"></a> Установка
 
@@ -49,5 +49,5 @@
 
 Использование исходного кода, включенного здесь, регламентируется Apache License, Version 2.0. Смотрите [LICENSE](/LICENSE) файл для разбора.
 
-[homepage]: http://mods.factorio.com/mod/teams
+[homepage]: http://mods.factorio.com/mod/teams-zo
 [Factorio]: https://factorio.com/
