@@ -1,4 +1,19 @@
 ﻿---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2021-04-13
+  Features:
+    - Added new commands:
+    - /remove-team <team name>
+    - /show-team [team name]
+    - /team-list
+    - /kick-teammate <player name>
+    - Improved /create-team <team name> (also, it was /create_team, btw)
+    - Added interface "zo-teams-core" + mod events
+    - All commands are switchable, change them in map settings
+    - New dependecies
+  Notes:
+    - It was in "zk-lib" mod, however, it should work better and fixed /team-list 
+---------------------------------------------------------------------------------------------------
 Version: 1.0.5
 Date: 2019-07-07
   Notes:

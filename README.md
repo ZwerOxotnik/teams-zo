@@ -1,26 +1,19 @@
 # Teams
 
-Read this in another language | [English](/README.md) | [Русский](/docs/ru/README.md)
-|---|---|---|
-
-## Quick Links
-
-[Changelog](/changelog.txt) | [Contributing](CONTRIBUTING.md)
-| --- | --- |
-
+[Changelog](/changelog.txt)
 ## Contents
 
-* [Overview](#overview)
-* [Versions](#versions)
-* [Issues](#issue)
-* [Features](#feature)
-* [Installing](#installing)
-* [License](#license)
+- [Teams](#teams)
+  - [Contents](#contents)
+  - [Overview](#overview)
+  - [<a name="issue"></a> Found an Issue?](#-found-an-issue)
+  - [<a name="feature"></a> Want a Feature?](#-want-a-feature)
+  - [Installing](#installing)
+  - [License](#license)
 
 ## Overview
 
-Adds "/create_team" command for creating new team in which you will be
-
+Adds switchable commands etc for teams
 ## <a name="issue"></a> Found an Issue?
 
 Please report any issues or a mistake in the documentation, you can help us by submitting an issue to our GitHub Repository or on [mods.factorio.com](https://mods.factorio.com/mod/teams-zo/discussion).
@@ -33,13 +26,13 @@ You can *request* a new feature by submitting an issue to our GitHub Repository 
 
 If you have downloaded a zip archive:
 
-* simply place it in your mods directory.
+* just place it in your mods directory.
 
 For more information, see [Installing Mods on the Factorio wiki](https://wiki.factorio.com/index.php?title=Installing_Mods).
 
 ## License
 
-This project is copyright © 2019 ZwerOxotnik \<zweroxotnik@gmail.com\>.
+This project is copyright © 2019, 2021 ZwerOxotnik \<zweroxotnik@gmail.com\>.
 
 Use of the source code included here is governed by the Apache License, Version 2.0. See the [LICENSE](/LICENSE) file for details.
 
