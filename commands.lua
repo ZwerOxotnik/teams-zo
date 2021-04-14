@@ -140,12 +140,12 @@ local function kick_teammate_command(cmd)
 	local caller = game.get_player(cmd.player_index)
 	local target_player = game.get_player(cmd.parameter)
 	if caller.admin then
-		game.print(cmd.parameter .. " was kicked from \"" .. target_player.force.name .. "\" team by" .. caller.name)
+		game.print(cmd.parameter .. " was kicked from \"" .. target_player.force.name .. "\" team by " .. caller.name)
 		target_player.force = game.forces["player"]
 		script.raise_event(module.self_events.on_kick, {player_index = target_player.index, kicker = caller.index})
 	elseif caller.force == target_player.force then
 		if caller.force.players[1] == caller then
-			game.print(cmd.parameter .. " was kicked from \"" .. target_player.force.name .. "\" team by" .. caller.name)
+			game.print(cmd.parameter .. " was kicked from \"" .. target_player.force.name .. "\" team by " .. caller.name)
 			target_player.force = game.forces["player"]
 			script.raise_event(module.self_events.on_kick, {player_index = target_player.index, kicker = caller.index})
 		else

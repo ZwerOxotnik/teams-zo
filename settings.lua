@@ -1,10 +1,10 @@
-local mod_commands = require("mod-commands")
+local SWITCHABLE_COMMANDS = require("mod-commands").get_commands()
 
 -- Don't use symbols like '-' etc (it'll break pattern of regular expressions)
 local MOD_SHORT_NAME = "zo_teams_"
 
 local commands = {}
-for key, command in pairs(mod_commands) do
+for key, command in pairs(SWITCHABLE_COMMANDS) do
 	local command_name = command.name or key
 	commands[#commands + 1] = {
 		type = "bool-setting",
