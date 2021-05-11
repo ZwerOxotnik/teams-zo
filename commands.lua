@@ -203,9 +203,30 @@ local function remove_team_command(cmd)
 	game.merge_forces(target_force, game.forces["player"])
 end
 
+local function friendly_fire_command(cmd)
+	local caller = game.get_player(cmd.player_index)
+	local friendly_fire_state
+
+	-- TODO: add localization here
+	if cmd.parameter == "true" then
+		friendly_fire_state = true
+		game.print("Friendly fire is enabled")
+	elseif cmd.parameter == "false" then
+		friendly_fire_state = false
+		game.print("Friendly fire is disabled")
+	else
+		caller.print("Parameter must be true or false")
+		return
+	end
+
+	for _, force in pairs(game.forces) do
+		force.friendly_fire = friendly_fire_state
+	end
+end
+
 -- local function update_global_data()
--- 	global.teams = global.teams or {}
--- 	local data = global.teams
+-- 	global.teams_zo = global.teams_zo or {}
+-- 	local data = global.teams_zo
 -- 	-- data.teams = data.teams or {}
 -- 	-- data.players = data.players or {}
 -- 	-- data.settings = data.settings or {}
@@ -232,7 +253,8 @@ module.commands = {
 	remove_team = remove_team_command,
 	team_list = team_list_command,
 	show_team = show_team_command,
-	kick_teammate = kick_teammate_command
+	kick_teammate = kick_teammate_command,
+	friendly_fire = friendly_fire_command
 }
 
 return module

@@ -28,7 +28,8 @@ local SWITCHABLE_COMMANDS = {
 	remove_team = {name = "remove-team", input_type = "team", description = {"teams.remove-team"}, only_for_admin = true},
 	team_list = {name = "team-list", description = {"teams.team-list"}, allow_for_server = true},
 	show_team = {name = "show-team", description = {"teams.show-team"}, allow_for_server = true},
-	kick_teammate = {name = "kick-teammate", is_allowed_empty_args = false, description = {"teams.kick-teammate"}, input_type = "player"}
+	kick_teammate = {name = "kick-teammate", is_allowed_empty_args = false, description = {"teams.kick-teammate"}, input_type = "player"},
+	friendly_fire = {name = "friendly-fire", description = {"teams.friendly-fire"}, is_allowed_empty_args = false, only_for_admin = true}
 }
 local CONST_COMMANDS = {}
 

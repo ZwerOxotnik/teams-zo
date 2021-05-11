@@ -3,13 +3,12 @@
 [Changelog](/changelog.txt)
 ## Contents
 
-- [Teams](#teams)
-  - [Contents](#contents)
-  - [Overview](#overview)
-  - [<a name="issue"></a> Found an Issue?](#-found-an-issue)
-  - [<a name="feature"></a> Want a Feature?](#-want-a-feature)
-  - [Installing](#installing)
-  - [License](#license)
+- [Contents](#contents)
+- [Overview](#overview)
+- [Found an Issue?](#issue)
+- [Want a Feature?](#feature)
+- [Installing](#installing)
+- [License](#license)
 
 ## Overview
 
