@@ -204,7 +204,6 @@ local function remove_team_command(cmd)
 end
 
 local function friendly_fire_command(cmd)
-	local caller = game.get_player(cmd.player_index)
 	local friendly_fire_state
 
 	-- TODO: add localization here
@@ -215,6 +214,7 @@ local function friendly_fire_command(cmd)
 		friendly_fire_state = false
 		game.print("Friendly fire is disabled")
 	else
+		local caller = game.get_player(cmd.player_index)
 		caller.print("Parameter must be true or false")
 		return
 	end
