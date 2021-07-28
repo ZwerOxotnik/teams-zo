@@ -21,12 +21,13 @@ limitations under the License.
 
 local module = {}
 module.self_events = require('self_events')
-local prohibited_forces = {neutral = true, player = true, enemy = true}
+local constant_forces = {neutral = true, player = true, enemy = true}
 
 -- local function clear_player_data(event)
 -- 	global.teams.players[event.player_index] = nil
 -- end
 
+---@param s string
 local function trim(s)
 	return s:match'^%s*(.*%S)' or ''
 end
@@ -53,15 +54,21 @@ local function team_list_command(cmd)
 	local caller = game.get_player(cmd.player_index)
 
 	local function get_forces(forces)
-		local list = ""
+		local data = {}
 		for _, force in pairs(forces) do
 			if #force.players > 0 then
-				list = list .. force.name .. '(' .. #force.connected_players .. '/' .. #force.players .. ') '
+				data[#data+1] = force.name
+				data[#data+1] = '('
+				data[#data+1] = #force.connected_players
+				data[#data+1] = '/'
+				data[#data+1] = #force.players
+				data[#data+1] = ') '
 			else
-				list = list .. force.name .. ' '
+				data[#data+1] = force.name
+				data[#data+1] = ' '
 			end
 		end
-		return list
+		return table.concat(data)
 	end
 
 	local ally_forces = {}
@@ -72,11 +79,11 @@ local function team_list_command(cmd)
 	for _, force in pairs(game.forces) do
 		if force ~= caller_force then
 			if caller_force.get_friend(force) then
-				table.insert(ally_forces, force)
+				ally_forces[#ally_forces+1] = force
 			elseif caller_force.get_cease_fire(force) then
-				table.insert(neutral_forces, force)
+				neutral_forces[#neutral_forces+1] = force
 			else
-				table.insert(enemy_forces, force)
+				enemy_forces[#enemy_forces+1] = force
 			end
 		end
 	end
@@ -173,7 +180,7 @@ local function create_new_team_command(cmd)
 	end
 
 	local new_team = game.create_force(cmd.parameter)
-	if #caller.force.players == 1 and not prohibited_forces[caller.force.name] then
+	if #caller.force.players == 1 and not constant_forces[caller.force.name] then
 		local technologies = new_team.technologies
 		for name, tech in pairs(caller.force.technologies) do
 			technologies[name].researched = tech.researched
@@ -195,7 +202,7 @@ local function remove_team_command(cmd)
 	if #target_force.players ~= 0 then
 		caller.print("The team isn't empty. There are still players in it")
 		return
-	elseif prohibited_forces[target_force.name] then
+	elseif constant_forces[target_force.name] then
 		caller.print({"gui-map-editor-force-editor.cant-delete-built-in-force"})
 		return
 	end
